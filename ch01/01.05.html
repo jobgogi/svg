@@ -14,8 +14,15 @@
     xmlns="http://www.w3.org/2000/svg">
     <title>고양이</title>
     <desc>고양이 그림</desc>
-    <!-- x: 70px y: 95px 반지름 50px으로 검은색 외곽선, 채우기 없음의 원을 그린다. -->
     <circle cx="70" cy="95" r="50" style="stroke: black; fill: none;" />
+    <circle cx="55" cy="80" r="5" stroke="black" fill="#339933" />
+    <circle cx="85" cy="80" r="5" stroke="black" fill="#339933" />
+    <g id="whiskers">
+      <line x1="75" y1="95" x2="135" y2="85" style="stroke: black;" />
+      <line x1="75" y1="95" x2="135" y2="105" style="stroke: black;" />
+    </g>
+    <!-- transform을 통해 위치 변환을 한다. -->
+    <use href="#whiskers" transform="scale(-1 1) translate(-140 0)" />
   </svg>
 </body>
 </html>
